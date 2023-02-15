@@ -31,12 +31,6 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 
-// import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
-// import CKBox from '@ckeditor/ckeditor5-ckbox/src/ckbox';
-// import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-// import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
-// import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
-
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -63,11 +57,6 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	SourceEditing
-	// UploadAdapter,
-	// CKBox,
-	// CKFinder,
-	// CloudServices,
-	// EasyImage,
 ];
 
 // Editor configuration.
@@ -110,8 +99,8 @@ ClassicEditor.defaultConfig = {
 			'tableRow',
 			'mergeTableCells'
 		]
-	},
+	}
 	// This value must be kept in sync with the language defined in webpack.config.js.
 	// https://ckeditor.com/docs/ckeditor5/latest/features/ui-language.html
-	language: 'en'
+	// language: 'ru'
 };
